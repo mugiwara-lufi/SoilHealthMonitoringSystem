@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #e8ebea;
+  background-color: #125c43;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -72,6 +72,7 @@ body {
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
+  color: black;
 }
 
 .scrollable-content {
@@ -196,7 +197,7 @@ body {
 .view-toggle-nav {
   position: fixed;
   bottom: 20px;
-  left: 50%;
+  left: 70%;
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
@@ -281,7 +282,7 @@ body {
 .stat-icon.red { background: #fff5f5; color: #e53e3e; }
 
 .admin-tabs { display: flex; gap: 10px; margin-bottom: 25px; }
-.tab { padding: 8px 20px; border-radius: 20px; border: 1px solid #e2e8f0; background: white; cursor: pointer; }
+.tab { padding: 8px 20px; border-radius: 20px; border: 1px solid #e2e8f0; background: white; cursor: pointer; color: black }
 .tab.active { background: #f7fafc; font-weight: bold; }
 
 .management-card {
@@ -300,6 +301,7 @@ body {
   border-radius: 8px;
   border: 1px solid #e2e8f0;
   background: #f7fafc;
+  color: black;
 }
 
 .farmer-table { width: 100%; border-collapse: collapse; }
@@ -330,7 +332,7 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-.btn-export { background: white; border: 1px solid #e2e8f0; }
+.btn-export { background: black; border: 1px solid #e2e8f0; }
 .btn-add { background: #1a202c; color: white; border: none; }
 
 .audit-list { display: flex; flex-direction: column; gap: 15px; margin-top: 10px; }
