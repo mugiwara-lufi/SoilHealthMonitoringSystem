@@ -1,5 +1,3 @@
-import React from 'react';
-
 const StatCard = ({ label, value, icon, color, textColor }) => {
   return (
     <div className="stat-card">

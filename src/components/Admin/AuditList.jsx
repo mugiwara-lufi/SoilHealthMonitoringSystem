@@ -1,5 +1,3 @@
-import React from 'react';
-
 const AuditList = ({ data }) => {
   return (
     <div className="audit-list">

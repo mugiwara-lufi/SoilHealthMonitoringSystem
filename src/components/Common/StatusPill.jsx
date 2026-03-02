@@ -1,5 +1,3 @@
-import React from 'react';
-
 const StatusPill = ({ status, children }) => {
   return (
     <span className={`status-pill ${status.toLowerCase()}`}>

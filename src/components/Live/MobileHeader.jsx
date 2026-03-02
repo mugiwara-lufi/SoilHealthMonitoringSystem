@@ -1,5 +1,3 @@
-import React from 'react';
-
 const MobileHeader = ({ title, location, status, onRefresh }) => {
   return (
     <header className="brand-header">
@@ -12,7 +10,7 @@ const MobileHeader = ({ title, location, status, onRefresh }) => {
       </div>
       <div className="header-status">
         <span>📡 Sensor {status}</span>
-        <button className="refresh-btn" onClick={onRefresh}>🔄 Refresh</button>
+        <button button="refresh-btn" onClick={onRefresh}>🔄 Refresh</button>
       </div>
     </header>
   );

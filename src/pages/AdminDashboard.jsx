@@ -89,9 +89,9 @@ const AdminDashboard = () => {
         </section>
 
         <div className="admin-tabs">
-          <button className={`tab ${activeTab === 'farmer' ? 'active' : ''}`} onClick={() => {setActiveTab('farmer'); setSearchTerm('');}}>Farmer Accounts</button>
-          <button className={`tab ${activeTab === 'logs' ? 'active' : ''}`} onClick={() => {setActiveTab('logs'); setSearchTerm('');}}>Master Data Logs</button>
-          <button className={`tab ${activeTab === 'audit' ? 'active' : ''}`} onClick={() => {setActiveTab('audit'); setSearchTerm('');}}>System Audit Trail</button>
+          <button button={`tab ${activeTab === 'farmer' ? 'active' : ''}`} onClick={() => {setActiveTab('farmer'); setSearchTerm('');}}>Farmer Accounts</button>
+          <button button={`tab ${activeTab === 'logs' ? 'active' : ''}`} onClick={() => {setActiveTab('logs'); setSearchTerm('');}}>Master Data Logs</button>
+          <button button={`tab ${activeTab === 'audit' ? 'active' : ''}`} onClick={() => {setActiveTab('audit'); setSearchTerm('');}}>System Audit Trail</button>
         </div>
 
         <section className="management-card">
@@ -100,16 +100,18 @@ const AdminDashboard = () => {
               {activeTab === 'farmer' ? 'Farmer Account Management' : activeTab === 'logs' ? 'Data Logs' : 'Audit Trail'}
             </h2>
             <div className="control-group">
-               <div className="search-wrapper">
-                  <input 
-                    type="text" 
-                    placeholder="Search visible data..." 
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                  />
-               </div>
-               <button className="btn-export">🔍 Filter</button>
-               <button className="btn-export">📤 Export Data</button>
+            <div className="search-wrapper">
+              <label htmlFor="admin-search" style={{ display: 'none' }}>Search Records</label>
+              <input 
+                id="admin-search"
+                type="text" 
+                placeholder="Search visible data..." 
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+               <button button="btn-export">🔍 Filter</button>
+               <button button="btn-export">📤 Export Data</button>
             </div>
           </div>
           
