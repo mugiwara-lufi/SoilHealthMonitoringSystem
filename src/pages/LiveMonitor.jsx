@@ -1,6 +1,7 @@
 import { sensorInfo, readings } from '../data/farmData';
 import MobileHeader from '../components/Live/MobileHeader';
 import SensorCard from '../components/Live/SensorCard';
+import MobileFooter from '../components/Live/MobileFooter'; // Import added here
 
 const LiveMonitor = () => {
   return (
@@ -56,10 +57,8 @@ const LiveMonitor = () => {
         </div>
       </div>
       
-      <footer className="mobile-sticky-footer">
-        <p>🌱 Soil Health Monitor v1.0</p>
-        <span style={{ fontSize: '0.7rem' }}>Last Sync: 11:00:31 PM</span>
-      </footer>
+      {/* Footer is now a separate component */}
+      <MobileFooter />
     </main>
   );
 };
